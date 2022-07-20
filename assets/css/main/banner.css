@@ -1,0 +1,101 @@
+.banner {
+    align-items: center;
+    background-image: url("../../img/wide_br_sib.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin-bottom: 15px;
+    padding: 30px 15px;
+    width: 100%;
+}
+
+.banner__intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.5rem;
+}
+
+.banner__img {
+    min-height: 105px;
+    max-height: 290px;
+    min-width: 290px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.banner__text {
+    color: #FFF;
+    display: block;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 5px 0 10px 0;
+    min-width: 290px;
+    max-width: 1245px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000e1d;
+}
+
+.button__banner {
+    position: relative;
+    left: -15px;
+    margin-left: 55px;
+    margin-bottom: 40px;
+    transform: skewX(-45deg);
+}
+
+.button__banner a {
+    align-items: center;
+	background-color: #a2030f;
+	color: #fff;
+	display: flex;
+	font-size: 90%;
+    justify-content: center;
+	height: 50px;
+	line-height: 130%;
+	margin: 0;
+    position: relative;
+	text-align: center;
+	text-decoration: none;
+	width: 225px;
+}
+
+.button__banner a::before {
+    content: "";
+    border-left: 18px solid #d18187;
+    height: 100%;
+    left: -18px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+.button__banner a::after {
+    content: "";
+    border-left: 12px solid #e8c0c3;
+    height: 100%;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    width: 32px;
+}
+
+.button__banner a span{
+    display: inline-block;
+    transform: skewX(45deg);
+}
+
+@media screen and (min-width: 768px) {
+    .banner__intro {
+        padding-top: 1rem;
+    }
+
+    .banner__text {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}

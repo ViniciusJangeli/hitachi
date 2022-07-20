@@ -1,0 +1,130 @@
+.header__bottom {
+    align-items: center;
+    box-sizing: border-box;
+    background: var(--bg-2);
+    display: flex;
+    height: 60px;
+    padding: 15px;
+}
+
+.nav-hb {
+    display: none;
+}
+
+.header__bottom-link {
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.header__bottom-link:hover {
+    opacity: .5;
+}
+
+.header-search {
+    align-items: center;
+    background-color: #c4c4c4;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    position: absolute;
+    left: -9999px;
+    z-index: 10000;
+
+}
+
+#header-search.active {
+    border: none;
+    color: #c4c4c4;
+    height: 90px;
+    padding-left: .5rem;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.input__search {
+    border: none;
+    color: #c4c4c4;
+    height: 38px;
+    padding-left: .5rem;
+    width: 50%;
+}
+
+
+.header_search-button {
+    border: none;
+    background: #b10000;
+    color: #f3f3f3;
+    height: 40px;
+    width: 20%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__bottom-link {
+        padding-left: 1rem;
+    }
+
+    .header__bottom nav {
+        width: 60%;
+    }
+
+    .nav-hb {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav__hb-item:hover {
+        background-color: #b10000;
+    }
+    
+    .nav__hb-item:first-child {
+        background-color: #b10000;
+        background-image: url("../../img/bg_g_navi_current.gif");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        font-weight: bold;
+    }
+
+    .nav__hb-item:first-child a{
+        color: #FFF;
+    }
+
+    
+
+    .nav__hb-link {
+        align-items: center;
+        color: #000;
+        display: flex;
+        font-size: .8em;
+        height: 60px;
+        text-decoration: none;
+        padding: 0 15px;
+    }
+
+    .nav__hb-link:hover {
+        color: #f3f3f3;
+    }
+
+   
+
+}
+
+@media screen and (min-width: 1240px) {
+
+    .header__bottom {
+        padding: 0 4rem;
+    }
+
+    .nav__hb-item:last-child {
+        padding-right: 1.8rem;
+    }
+
+}

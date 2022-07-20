@@ -1,0 +1,29 @@
+
+:root {
+    --bg: #fff;
+    --bg-2: #f5f5f5;
+    --bg-items: #cfcfcf;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.hidden-text {
+    left: -9999px;
+    position: relative;
+    top: -9999px
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Droid Sans", sans-serif;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
